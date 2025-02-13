@@ -1,0 +1,98 @@
+:root {
+    --primary-color: #FFE5E5;
+    --secondary-color: #FFA5A5;
+    --accent-color: #FF6B6B;
+}
+
+* {
+    font-family: 'comic sans ms', cursive;
+}
+
+body {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    border: 5px solid var(--secondary-color);
+    min-width: 400px;
+    max-width: 1200px;
+    margin: 20px;
+}
+
+h1 {
+    color: var(--accent-color);
+    text-align: center;
+    font-size: 30px;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 3px solid var(--secondary-color);
+    border-radius: 10px;
+    font-size: 20px;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    background: var(--accent-color);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: var(--primary-color);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 3px solid var(--secondary-color);
+}
+
+.todo-item.completed span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.todo-item span {
+    flex: 1;
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+
+.todo-item input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+}
+
+.delete-btn {
+    background: var(--accent-color);
+    padding: 5px 10px;
+    font-size: 1em;
+}
+
+.empty-message {
+    text-align: center;
+    color: gray;
+    font-size: 1.2em;
+}
